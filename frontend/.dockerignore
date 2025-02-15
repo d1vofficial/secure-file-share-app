@@ -1,0 +1,26 @@
+# Node modules (should be installed inside the container)
+node_modules
+
+# Dependencies lock files (optional, but can speed up build)
+yarn.lock
+pnpm-lock.yaml
+
+# Build output
+dist
+.vite
+
+# Config files (optional, depends on your project)
+.vscode
+.idea
+*.log
+npm-debug.log
+yarn-error.log
+
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Git-related files
+.git
+.gitignore

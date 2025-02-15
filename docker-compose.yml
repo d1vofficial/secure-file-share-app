@@ -1,0 +1,30 @@
+services:
+  backend:
+    build:
+      context: ./backend/secure-file-share
+      dockerfile: Dockerfile
+    container_name: secure-file-share-backend
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./cert:/cert  # <-- Mount the cert folder at root
+      - ./db-data:/app/db  # Persist SQLite database
+    environment:
+      - SECRET_KEY=django-insecure-_qkcjpx*o!9o9p2gz#vh=rnyrl9is^232qqp3)%%g%64i7w5c+
+      - DEBUG=True
+    restart: always
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: secure-file-share-frontend
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./cert:/cert  # <-- Mount the cert folder at root
+    environment:
+      - VITE_API_URL=https://127.0.0.1:8000/api
+    depends_on:
+      - backend
+    restart: always

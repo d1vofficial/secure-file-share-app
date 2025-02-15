@@ -1,0 +1,30 @@
+# Virtual environment
+.venv
+
+# Python cache files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Logs
+django_debug.log
+django_error.log
+
+# Database (if using SQLite)
+db.sqlite3
+
+# Certificates (Sensitive!)
+# cert/
+# cert.crt
+# cert.key
+
+# Environment variables (to avoid leaking secrets)
+.env
+
+# Git & Docker-related files
+.git
+.gitignore
+Dockerfile
+docker-compose.yml
+docker-entrypoint.sh
