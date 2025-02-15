@@ -1,0 +1,975 @@
+{
+	"info": {
+		"_postman_id": "10e28705-3c0b-4b56-bde3-21c84e6f1b6f",
+		"name": "Secure_Filesharing_App_Final",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Register a new user",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\": \"testuser6\",\n    \"email\": \"test@example123.com\",\n    \"password\": \"TestPass123!\",\n    \"password2\": \"TestPass123!\",\n    \"role\": \"USER\"\n}"
+				},
+				"url": {
+					"raw": "https://127.0.0.1:8000/api/auth/register/",
+					"protocol": "https",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"auth",
+						"register",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Register a new user",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"username\": \"testuser6\",\n    \"email\": \"test@example123.com\",\n    \"password\": \"TestPass123!\",\n    \"password2\": \"TestPass123!\",\n    \"role\": \"USER\"\n}"
+						},
+						"url": {
+							"raw": "https://127.0.0.1:8000/api/auth/register/",
+							"protocol": "https",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"auth",
+								"register",
+								""
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Werkzeug/3.0.1 Python/3.9.21"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 15 Feb 2025 16:37:51 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, origin"
+						},
+						{
+							"key": "Allow",
+							"value": "POST, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "547"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=31536000; includeSubDomains; preload"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"User registered successfully\",\n    \"tokens\": {\n        \"refresh\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTczOTcyMzg3MSwiaWF0IjoxNzM5NjM3NDcxLCJqdGkiOiJiYjYzN2RhZWM3MDk0NWY1ODBkNzYxZWI3ZTcyMGZjOSIsInVzZXJfaWQiOjh9.UiJetX-RlShgN55bDUlPJLex0EG1MH6nsSCYK_JhKUc\",\n        \"access\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5NjM3NzcxLCJpYXQiOjE3Mzk2Mzc0NzEsImp0aSI6IjQ1NTE3Yzc3Y2JiMzQxZjA4Mzg2YjI3YmY0MDU2OTE2IiwidXNlcl9pZCI6OH0.PosvBptSZZFm7nMXjYZ0N5sjWR04tTytp5H2UUKX6W8\"\n    },\n    \"user_id\": 8\n}"
+				},
+				{
+					"name": "Register a new user",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"username\": \"testuser4\",\n    \"email\": \"test@example1.com\",\n    \"password\": \"TestPass123!\",\n    \"password2\": \"TestPass123!\",\n    \"role\": \"USER\"\n}"
+						},
+						"url": {
+							"raw": "https://127.0.0.1:8000/api/auth/register/",
+							"protocol": "https",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"auth",
+								"register",
+								""
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Werkzeug/3.0.1 Python/3.9.21"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 15 Feb 2025 16:18:28 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, origin"
+						},
+						{
+							"key": "Allow",
+							"value": "POST, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "535"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=31536000; includeSubDomains; preload"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"User registered successfully\",\n    \"tokens\": {\n        \"refresh\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTczOTcyMjcwOCwiaWF0IjoxNzM5NjM2MzA4LCJqdGkiOiJkMTZhNzU3YzVlMWI0OWZjOTExODhiZTQxZDFkNTkwZCIsInVzZXJfaWQiOjZ9.fJ8-SQUeJaZ4wiBg3TmMBmnEOSIJKFd1GVIejY6gLkc\",\n        \"access\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5NjM2NjA4LCJpYXQiOjE3Mzk2MzYzMDgsImp0aSI6IjY5OTE4ZjU4MGY3YTQ2NTZiN2JiZGFmNmJmY2ZjN2I0IiwidXNlcl9pZCI6Nn0.UqQZrC4jk1VJE9JJIFL6lPy9QFpbZ4PqkOtNpihVQQg\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\": \"testuser2\",\n    \"password\": \"TestPass123!\"\n}"
+				},
+				"url": {
+					"raw": "https://127.0.0.1:8000/api/auth/login/",
+					"protocol": "https",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"auth",
+						"login",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Login",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"username\": \"testuser4\",\n    \"password\": \"TestPass123!\"\n}"
+						},
+						"url": {
+							"raw": "https://127.0.0.1:8000/api/auth/login/",
+							"protocol": "https",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"auth",
+								"login",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Werkzeug/3.0.1 Python/3.9.21"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 15 Feb 2025 16:20:22 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, origin"
+						},
+						{
+							"key": "Allow",
+							"value": "POST, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "595"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=31536000; includeSubDomains; preload"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"tokens\": {\n        \"refresh\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTczOTcyMjgyMiwiaWF0IjoxNzM5NjM2NDIyLCJqdGkiOiI2Y2M5MDBkOTFkZTY0YTg3ODk0M2RhODNmZGVjZmYxMCIsInVzZXJfaWQiOjZ9.SuflODtvpE9NtZlQU0DLcBcDjRzN_ogcc2TUTCT9Mtw\",\n        \"access\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5NjM2NzIyLCJpYXQiOjE3Mzk2MzY0MjIsImp0aSI6IjRiMWUwMjUwZDhlYTQzZjQ4YmRiMWQyOWI3Y2I0MDcxIiwidXNlcl9pZCI6Nn0.STWhIuqrPDRPDvPLHYIpRueLUvOoesgOz5SqWi3SWns\"\n    },\n    \"user\": {\n        \"id\": 6,\n        \"username\": \"testuser4\",\n        \"email\": \"test@example1.com\",\n        \"role\": \"USER\",\n        \"mfa_enabled\": false\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Refresh Access Token",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"refresh\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTczOTcyMjgyMiwiaWF0IjoxNzM5NjM2NDIyLCJqdGkiOiI2Y2M5MDBkOTFkZTY0YTg3ODk0M2RhODNmZGVjZmYxMCIsInVzZXJfaWQiOjZ9.SuflODtvpE9NtZlQU0DLcBcDjRzN_ogcc2TUTCT9Mtw\"\n}"
+				},
+				"url": {
+					"raw": "https://127.0.0.1:8000/api/auth/token/refresh/",
+					"protocol": "https",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"auth",
+						"token",
+						"refresh",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Refresh Access Token",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"refresh\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTczOTcyMjgyMiwiaWF0IjoxNzM5NjM2NDIyLCJqdGkiOiI2Y2M5MDBkOTFkZTY0YTg3ODk0M2RhODNmZGVjZmYxMCIsInVzZXJfaWQiOjZ9.SuflODtvpE9NtZlQU0DLcBcDjRzN_ogcc2TUTCT9Mtw\"\n}"
+						},
+						"url": {
+							"raw": "https://127.0.0.1:8000/api/auth/token/refresh/",
+							"protocol": "https",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"auth",
+								"token",
+								"refresh",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Werkzeug/3.0.1 Python/3.9.21"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 15 Feb 2025 16:21:58 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, origin"
+						},
+						{
+							"key": "Allow",
+							"value": "POST, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "241"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=31536000; includeSubDomains; preload"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"access\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5NjM2ODE4LCJpYXQiOjE3Mzk2MzY0MjIsImp0aSI6IjlhZjJkYzg1NTIxMzRiOTlhNzRlNDU4MThlMDMyZTJkIiwidXNlcl9pZCI6Nn0.G9kBP7PYStlfLHHxhPyvZY6WdCn3ikmcntOHMqtzdlQ\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Enable MFA",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5NjM2ODE4LCJpYXQiOjE3Mzk2MzY0MjIsImp0aSI6IjlhZjJkYzg1NTIxMzRiOTlhNzRlNDU4MThlMDMyZTJkIiwidXNlcl9pZCI6Nn0.G9kBP7PYStlfLHHxhPyvZY6WdCn3ikmcntOHMqtzdlQ"
+					}
+				],
+				"url": {
+					"raw": "https://127.0.0.1:8000/api/auth/mfa/enable/",
+					"protocol": "https",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"auth",
+						"mfa",
+						"enable",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Verify MFA",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"user_id\": 6,\n    \"code\": \"902710\"\n}"
+				},
+				"url": {
+					"raw": "https://127.0.0.1:8000/api/auth/mfa/verify/",
+					"protocol": "https",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"auth",
+						"mfa",
+						"verify",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Disable MFA",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5NjM3ODIyLCJpYXQiOjE3Mzk2Mzc1MjIsImp0aSI6IjEwOTY0ZGNjYWI2YTQ0NzRhNmI5YTI1NGFiZjUyZjJkIiwidXNlcl9pZCI6Nn0.h7EOl0anjb2LCKxtZzzMgoGuc7_TnuJnuBhMhRmDp6w"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "user_id",
+							"value": "6",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://127.0.0.1:8000/api/auth/mfa/disable/",
+					"protocol": "https",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"auth",
+						"mfa",
+						"disable",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Upload a file",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5NjM3ODIyLCJpYXQiOjE3Mzk2Mzc1MjIsImp0aSI6IjEwOTY0ZGNjYWI2YTQ0NzRhNmI5YTI1NGFiZjUyZjJkIiwidXNlcl9pZCI6Nn0.h7EOl0anjb2LCKxtZzzMgoGuc7_TnuJnuBhMhRmDp6w"
+					},
+					{
+						"warning": "This is a duplicate header and will be overridden by the Content-Type header generated by Postman.",
+						"key": "Content-Type",
+						"value": "multipart/form-data"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/C:/Users/HP/Downloads/hello_latest.txt"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://127.0.0.1:8000/api/files/files/upload/",
+					"protocol": "https",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"files",
+						"files",
+						"upload",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List your files",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5NTY0NzAwLCJpYXQiOjE3Mzk1NjQ0MDAsImp0aSI6ImYzYTE4MGQ5MGE3MTRjOTViMWUwZTFhYTlkYjRhYmRlIiwidXNlcl9pZCI6Mn0.SKvYjQgvNuGFGTpmFZqiPyYsK5yCDrl1tUoHU41ttEU"
+					}
+				],
+				"url": {
+					"raw": "https://127.0.0.1:8000/api/files/files/",
+					"protocol": "https",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"files",
+						"files",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List users",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5NjIyNTc4LCJpYXQiOjE3Mzk2MjIyNzgsImp0aSI6IjY2MGIyMjFhOWYxYTRmZDE4OTAzMTlmYmY3MWM5ODUxIiwidXNlcl9pZCI6Mn0.a27lmXmxbEwW5xGO3QO5aZJb71ZMgJZ8ArU8-Ry5Wlw"
+					}
+				],
+				"url": {
+					"raw": "https://127.0.0.1:8000/api/auth/users/",
+					"protocol": "https",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"auth",
+						"users",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Share file",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5NjM3ODIyLCJpYXQiOjE3Mzk2Mzc1MjIsImp0aSI6IjEwOTY0ZGNjYWI2YTQ0NzRhNmI5YTI1NGFiZjUyZjJkIiwidXNlcl9pZCI6Nn0.h7EOl0anjb2LCKxtZzzMgoGuc7_TnuJnuBhMhRmDp6w"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"shared_with\": 3,\n    \"permission\": \"VIEW\",\n    \"expires_at\": \"2025-02-20T00:00:00Z\",\n    \"file\":\"a26043bb-2646-4ac2-970d-355ee9da42bc\"\n}"
+				},
+				"url": {
+					"raw": "https://127.0.0.1:8000/api/files/files/a26043bb-2646-4ac2-970d-355ee9da42bc/share/",
+					"protocol": "https",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"files",
+						"files",
+						"a26043bb-2646-4ac2-970d-355ee9da42bc",
+						"share",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Generate a shareable link",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5NjM3ODIyLCJpYXQiOjE3Mzk2Mzc1MjIsImp0aSI6IjEwOTY0ZGNjYWI2YTQ0NzRhNmI5YTI1NGFiZjUyZjJkIiwidXNlcl9pZCI6Nn0.h7EOl0anjb2LCKxtZzzMgoGuc7_TnuJnuBhMhRmDp6w"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"expires_at\": \"2025-02-18T00:00:00Z\",\n    \"one_time_use\": true\n}"
+				},
+				"url": {
+					"raw": "https://127.0.0.1:8000/api/files/files/a26043bb-2646-4ac2-970d-355ee9da42bc/generate-link/",
+					"protocol": "https",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"files",
+						"files",
+						"a26043bb-2646-4ac2-970d-355ee9da42bc",
+						"generate-link",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Access a shared link",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5NjM3ODIyLCJpYXQiOjE3Mzk2Mzc1MjIsImp0aSI6IjEwOTY0ZGNjYWI2YTQ0NzRhNmI5YTI1NGFiZjUyZjJkIiwidXNlcl9pZCI6Nn0.h7EOl0anjb2LCKxtZzzMgoGuc7_TnuJnuBhMhRmDp6w",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://127.0.0.1:8000/api/files/shared-link/6166982c-91ee-40cf-ad5b-f1b1843b6c0f/",
+					"protocol": "https",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"files",
+						"shared-link",
+						"6166982c-91ee-40cf-ad5b-f1b1843b6c0f",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "view a file",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5NjM3ODIyLCJpYXQiOjE3Mzk2Mzc1MjIsImp0aSI6IjEwOTY0ZGNjYWI2YTQ0NzRhNmI5YTI1NGFiZjUyZjJkIiwidXNlcl9pZCI6Nn0.h7EOl0anjb2LCKxtZzzMgoGuc7_TnuJnuBhMhRmDp6w",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://127.0.0.1:8000/api/files/files/a26043bb-2646-4ac2-970d-355ee9da42bc/?action=view",
+					"protocol": "https",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"files",
+						"files",
+						"a26043bb-2646-4ac2-970d-355ee9da42bc",
+						""
+					],
+					"query": [
+						{
+							"key": "action",
+							"value": "view"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "download a file",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5NDY5NzgzLCJpYXQiOjE3Mzk0Njk0ODMsImp0aSI6ImY3ZTdmMTEzNmVlNzQ5OTk5NDA2MmM5MjA2NmYxMTg1IiwidXNlcl9pZCI6Mn0.wdEjbqiSSkJ8nQS2Z70LTspmHIBzl8nI6mJgutfoY0g",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://127.0.0.1:8000/api/files/files/f12cf90b-61ac-4bb1-acae-9419f629a4e0/?action=download",
+					"protocol": "https",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"files",
+						"files",
+						"f12cf90b-61ac-4bb1-acae-9419f629a4e0",
+						""
+					],
+					"query": [
+						{
+							"key": "action",
+							"value": "download"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "View the shared file",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5NTU3MDU1LCJpYXQiOjE3Mzk1NTY3NTUsImp0aSI6ImMzNDc2OTQyMGZkODQ2MjBhNGQwM2FkNzI4ZTBlY2RiIiwidXNlcl9pZCI6M30.KOfnwrNWcm3c_-_F5Ex8Jp3IUl5If902QDuwmm3eUpo"
+					}
+				],
+				"url": {
+					"raw": "https://127.0.0.1:8000/api/files/shared-link/d3c040c8-9350-4156-9d23-1804b6120acd/?action=view",
+					"protocol": "https",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"files",
+						"shared-link",
+						"d3c040c8-9350-4156-9d23-1804b6120acd",
+						""
+					],
+					"query": [
+						{
+							"key": "action",
+							"value": "view"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Download shared file",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5NjM4MTgwLCJpYXQiOjE3Mzk2Mzc4ODAsImp0aSI6ImEzZDJlZDYyOTBiZjQ3NzlhZGI0MzI1OTY5YjU2NjcwIiwidXNlcl9pZCI6M30.axO60Drlvvh5OjY7hDzig8Ab99hGrWJA8re15_NJnL0"
+					}
+				],
+				"url": {
+					"raw": "https://127.0.0.1:8000/api/files/shared-link/a26043bb-2646-4ac2-970d-355ee9da42bc/?action=download",
+					"protocol": "https",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"files",
+						"shared-link",
+						"a26043bb-2646-4ac2-970d-355ee9da42bc",
+						""
+					],
+					"query": [
+						{
+							"key": "action",
+							"value": "download"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
